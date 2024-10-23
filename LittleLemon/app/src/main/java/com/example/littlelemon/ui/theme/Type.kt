@@ -2,18 +2,39 @@ package com.example.littlelemon.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.example.littlelemon.R
+
+
+val MarkaziText = FontFamily(
+    Font(R.font.markazitext_regular, FontWeight.Normal),
+)
+
+val Karla = FontFamily(
+    Font(R.font.karla_regular, FontWeight.Normal)
+)
 
 // Set of Material typography styles to start with
 val Typography = Typography(
     bodyLarge = TextStyle(
-        fontFamily = FontFamily.Default,
+        fontFamily = Karla,
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp,
         lineHeight = 24.sp,
         letterSpacing = 0.5.sp
+    ),
+    titleMedium = TextStyle(
+        fontFamily = Karla,
+        fontWeight = FontWeight.Bold,
+        fontSize = 18.sp
+    ),
+    titleLarge = TextStyle(
+        fontFamily = Karla,
+        fontWeight = FontWeight.Bold,
+        fontSize = 30.sp
     )
     /* Other default text styles to override
     titleLarge = TextStyle(
@@ -32,3 +53,4 @@ val Typography = Typography(
     )
     */
 )
+
