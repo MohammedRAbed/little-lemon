@@ -35,6 +35,21 @@ val Typography = Typography(
         fontFamily = Karla,
         fontWeight = FontWeight.Bold,
         fontSize = 30.sp
+    ),
+    displayLarge = TextStyle(
+        fontFamily = MarkaziText,
+        fontWeight = FontWeight.Normal,
+        fontSize = 54.sp,
+    ),
+    displayMedium = TextStyle(
+        fontFamily = Karla,
+        fontWeight = FontWeight.ExtraBold,
+        fontSize = 34.sp,
+    ),
+    displaySmall = TextStyle(
+        fontFamily = MarkaziText,
+        fontWeight = FontWeight.Normal,
+        fontSize = 35.sp
     )
     /* Other default text styles to override
     titleLarge = TextStyle(

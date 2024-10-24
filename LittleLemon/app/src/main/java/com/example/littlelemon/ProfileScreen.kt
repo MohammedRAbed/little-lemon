@@ -101,6 +101,9 @@ fun UpdateInputBox(navController: NavController) {
                 "Logged out".showToast(context)
                 sharedPreferences.edit(commit = true) {
                     putBoolean(LOGGED_KEY, false)
+                    putString(FIRST_NAME_KEY, "")
+                    putString(LAST_NAME_KEY, "")
+                    putString(EMAIL_KEY, "")
                 }
                 navController.navigate(OnBoarding.route) {
                     popUpTo(Profile.route) {

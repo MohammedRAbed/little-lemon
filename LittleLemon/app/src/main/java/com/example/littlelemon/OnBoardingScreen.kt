@@ -58,6 +58,7 @@ fun OnBoardingScreen(navController: NavController) {
     }
 }
 
+
 @Composable
 fun ContentBox(navController: NavController) {
     WelcomeBox()
@@ -169,6 +170,7 @@ fun RegisterInputBox(navController: NavController) {
                         }
                     }
                     "Registration successful !".showToast(context)
+
                 } else {
                     "Registration unsuccessful".showToast(context)
                 }
@@ -208,7 +210,7 @@ fun TextFieldBox(
             enabled = enabled,
             maxLines = 1,
             keyboardOptions = KeyboardOptions(keyboardType = keyboardType),
-            keyboardActions = KeyboardActions(onNext = {focusManager.moveFocus(FocusDirection.Down)})
+            keyboardActions = KeyboardActions(onNext = { focusManager.moveFocus(FocusDirection.Down) })
         )
     }
 }
